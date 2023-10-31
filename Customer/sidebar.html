@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Split Screen</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styleSidebar.css">
+</head>
+<body style="background-image: url('barber.png');">
+      <div class="wrapper">
+      	<ul>
+      	<li>
+      		<a href="log-page.html">
+      			<span class="icon"><i class="fa fa-home" aria-hidden="true"></i> </span>
+      			<span class="title">Dashboard</span>
+                
+      		</a>
+      	</li>
+      	<li>
+      		<a href="login.html">
+      			<span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+      			<span class="title">Sign In</span>
+      		
+      		</a>
+      	</li> 
+      	<li>
+      		<a href="sidebar.html">
+      			<span class="icon"><i class="fa fa-registered" aria-hidden="true"></i></i></span>
+      			<span class="title">Sign up</span>
+      		
+      		</a>
+      	</li>       	
+
+      	</ul>
+      </div>
+      <div class="container">
+      	<div class="bob">
+      	<div class="titles"> Registration</div>
+      	<form class="form" action="databaseRegister.php" method="post">
+      		<div class="user-details">
+      		<div class="input-box">
+      			<span class="details">Full Name</span>
+      			<input name="name" class="input" type="text" placeholder="Enter your name" required>
+      		</div>
+      		<div class="input-box">
+      			<span class="details">Matrix Number</span>
+      			<input name="matrixNo" class="input" type="number" maxlength="7" placeholder="Enter your matrix number" required>
+      		</div>
+      		<div class="input-box">
+      			<span class="details">Email Address</span>
+      			<input name="email" class="input" type="email" placeholder="Enter your email" required>
+      		</div>
+      		<div class="input-box">
+      			<span class="details">Phone Number</span>
+      			<input name="telephone" class="input" type="tel" placeholder="Enter your phone number" required>
+      		</div>
+      		<div class="input-box">
+      			<span class="details">Password</span>
+      			<input name="password1" class="input" type="password" minlength="8" placeholder="Enter your password" required>
+      		</div>
+      		<div class="input-box">
+      			<span class="details">Confirm Password</span>
+      			<input name="password2" class="input" type="password" minlength="8"  placeholder="Confirm your password" required>
+      		</div>
+      		
+      		<div class="gender-details">
+      			<span class="gender-titles">Gender</span>
+      			<div class="category">
+      				<input type="radio" name="gender" id="dot-1">
+      				<label for="dot-1">
+      					<span class="dot one"></span>
+      					<span class="gender">Male</span>
+      				</label>
+      				<input type="radio" name="gender" id="dot-2">
+      				<label for="dot-2">
+      					<span class="dot two"></span>
+      					<span class="gender">Female</span>
+      				</label>
+ 
+      			</div>
+      		</div>
+      		</div>
+      		
+      		<div class="button">
+      			<p>
+      			<input name="submit" type="submit" value="Register">
+      		</p>
+      		</div>
+      	
+  </form>
+</div>
+</div>
+
+      
+</body>
+</html>

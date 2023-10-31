@@ -1,0 +1,193 @@
+body{
+
+	min-height: 100vh;
+}
+ .wrapper
+ {
+ 	position: fixed;
+ 	width: 60px;
+ 	height: 100%;
+ 	background: transparent;
+ 	transition: 0.5s;
+ 	overflow: hidden;
+ }
+ img 
+        {
+            align-items: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+ .wrapper:hover
+ {
+ 	width: 300px;
+ }
+.wrapper ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.wrapper ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.wrapper ul li:hover
+{
+    background: #ea1d63;
+}
+.wrapper ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width:60px ;
+    height: 60px;
+    line-height: 60px;
+}
+.wrapper ul li a .icon .fa
+{
+    font-size: 24px;
+}
+.wrapper ul li a .title
+{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.container
+{
+    display: flex;
+    background:transparent ;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.bob
+{
+    margin-left: 60px;
+    max-width: 700px;
+    width: 100%;
+    background: transparent;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.bob .titles
+{
+     color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.bob .form .user-details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     margin: 20px 0 12px 0;
+}
+.form .user-details .input-box
+{
+   margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+}
+.user-details .input-box .details
+{
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box .input
+{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc  ;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.form .gender-details .gender-titles
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form .gender-details .category
+{
+    color: #fff;
+    display: flex; 
+    width: 50vh;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label
+{
+    display: flex;
+    align-items: center;
+}
+.form .button
+{
+    height:45px  ;
+    margin: 45px 0 ; 
+}
+.form .button input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border:  none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6 );
+}
+.form .button input:hover
+{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6 );
+}
+@media (max-width:  584px)
+{
+    .container .bob
+    {
+        max-height: 100%;
+        max-width: 100%;
+
+    }
+    .form .user-details .input-box
+    {
+        margin-bottom: 15px;
+        width: 100%;
+
+    }
+    .bob .form .user-details
+    {
+        max-height: 600px;
+    }
+
+}
